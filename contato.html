@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cintia Suelen Advocacia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="hero-section" style="min-height: 300px; padding: 0;">
+        <div class="menu-wrapper">
+            <nav class="main-nav simple-nav">
+                <a href="index.html">Início</a>
+                <a href="quem-sou-eu.html">Quem Sou Eu</a>
+                <a href="index.html#servicos">Serviços</a>
+                <a href="index.html#depoimentos">Depoimentos</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <button class="hamburger" aria-expanded="false" aria-label="Menu">
+                <div class="hamburger-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <span class="hamburger-label">MENU</span>
+            </button>
+            <nav class="mobile-nav">
+                <a href="index.html">INÍCIO</a>
+                <a href="quem-sou-eu.html">QUEM SOU EU</a>
+                <a href="index.html#servicos">SERVIÇOS</a>
+                <a href="index.html#depoimentos">DEPOIMENTOS</a>
+                <a href="contato.html">CONTATO</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Contato -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-intro">
+                <h2>Entre em Contato</h2>
+                <p>Estou à disposição para ajudar você com suas questões jurídicas. Escolha a forma de contato que preferir.</p>
+            </div>
+
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefone</h3>
+                    <p>Disponível de segunda a sexta, das 9h às 18h</p>
+                    <a href="tel:+5511999999999" class="btn-contact">
+                        (11) 99999-9999
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Atendimento rápido via mensagem</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn-contact">
+                        Enviar mensagem
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>E-mail</h3>
+                    <p>Resposta em até 24 horas úteis</p>
+                    <a href="mailto:contato@cintiasuelen.com.br" class="btn-contact">
+                        contato@cintiasuelen.com.br
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Siga-me para dicas e atualizações</p>
+                    <a href="https://www.instagram.com/cintiasuelenaraujo/?hl=pt-br" target="_blank" class="btn-contact">
+                        @cintiasuelenaraujo
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <p class="copyright">&copy; 2024 Cintia Suelen Advocacia. Todos os direitos reservados.</p>
+            <p class="creator">Criado por: Alex Amaral</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
