@@ -1,2 +1,0 @@
-# cs
-Assessoria e Treinamentos
