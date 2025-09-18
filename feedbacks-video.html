@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks em Vídeo - Cintia Suelen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero-section" style="min-height: 300px; padding: 0;">
+        <div class="menu-wrapper">
+            <nav class="main-nav simple-nav">
+                <a href="index.html">Início</a>
+                <a href="quem-sou-eu.html">Quem Sou Eu</a>
+                <a href="index.html#servicos">Serviços</a>
+                <a href="index.html#depoimentos">Depoimentos</a>
+                <a href="index.html#poder-marketplaces">O Poder dos Marketplaces</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <button class="hamburger" aria-expanded="false" aria-label="Menu">
+                <div class="hamburger-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <span class="hamburger-label">MENU</span>
+            </button>
+            <nav class="mobile-nav">
+                <a href="index.html">INÍCIO</a>
+                <a href="quem-sou-eu.html">QUEM SOU EU</a>
+                <a href="index.html#servicos">SERVIÇOS</a>
+                <a href="index.html#depoimentos">DEPOIMENTOS</a>
+                <a href="index.html#poder-marketplaces">O PODER DOS MARKETPLACES</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="contato.html">CONTATO</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container" style="padding: 60px 0;">
+            <h2 style="text-align:center; color:var(--primary-color); margin-bottom:40px;">Feedbacks em Vídeo</h2>
+            <p style="text-align:center; max-width:600px; margin:0 auto 40px; font-size:1.15rem;">Aqui você encontra depoimentos em vídeo de clientes que tiveram resultados reais com minha assessoria e treinamentos. Assista e veja como posso ajudar você também!</p>
+            <div class="video-feedbacks-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:32px;">
+                <!-- Exemplo de vídeo. Substitua os src pelos links reais dos vídeos dos clientes. -->
+                <div class="video-card" style="background:#fff; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.08); padding:24px; text-align:center;">
+                    <video controls width="100%" poster="img/cs.jpg">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo.
+                    </video>
+                    <h3 style="margin-top:18px; color:var(--primary-color);">Lucilene</h3>
+                    <p>"Depoimento incrível sobre o serviço!"</p>
+                </div>
+                <div class="video-card" style="background:#fff; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.08); padding:24px; text-align:center;">
+                    <video controls width="100%" poster="img/cs.jpg">
+                        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo.
+                    </video>
+                    <h3 style="margin-top:18px; color:var(--primary-color);">VP Space</h3>
+                    <p>"Outro depoimento excelente!"</p>
+                </div>
+            </div>
+            <!-- Área de feedback das empresas -->
+            <div class="video-feedbacks-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:32px; margin-top:32px;">
+                <div class="video-card" style="background:#fff; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.08); padding:24px; text-align:center;">
+                    <video controls width="100%" poster="img/cs.jpg">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo.
+                    </video>
+                    <h3 style="margin-top:18px; color:var(--primary-color);">Empresa X</h3>
+                    <p>"A consultoria da Cíntia foi fundamental para nossa empresa crescer nos marketplaces. Profissionalismo, dedicação e resultados acima do esperado!"</p>
+                </div>
+                <div class="video-card" style="background:#fff; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.08); padding:24px; text-align:center;">
+                    <video controls width="100%" poster="img/cs.jpg">
+                        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo.
+                    </video>
+                    <h3 style="margin-top:18px; color:var(--primary-color);">Empresa Y</h3>
+                    <p>"Com o suporte da Cíntia, nossa equipe aprendeu a vender com mais estratégia e segurança. Recomendo para empresas que querem crescer!"</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <p class="copyright">© 2025 Cintia Suelen - Assessoria e Treinamentos. Todos os direitos reservados.</p>
+            <p class="creator">Criado por: Alex Amaral</p>
+        </div>
+    </footer>
+    <script>
+    // Menu hamburguer mobile funcional para links externos
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+        function openMobileMenu() {
+            mobileNav.style.display = 'flex';
+            setTimeout(() => {
+                mobileNav.classList.add('active');
+                hamburger.setAttribute('aria-expanded', 'true');
+            }, 10);
+        }
+        function closeMobileMenu() {
+            mobileNav.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            setTimeout(() => {
+                mobileNav.style.display = 'none';
+            }, 300);
+        }
+        hamburger.addEventListener('click', () => {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            if (!isExpanded) {
+                openMobileMenu();
+            } else {
+                closeMobileMenu();
+            }
+        });
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 900) {
+                    closeMobileMenu();
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
